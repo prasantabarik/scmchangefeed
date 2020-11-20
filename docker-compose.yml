@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  deliverymomentcosmoschangestream:
+    image: ${DOCKER_REGISTRY-}deliverymomentcosmoschangestream
+    build:
+      context: .
+      dockerfile: DeliveryMomentCosmosChangeStream/Dockerfile
