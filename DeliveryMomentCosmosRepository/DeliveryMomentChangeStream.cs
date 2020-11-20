@@ -25,12 +25,11 @@ namespace TCS.MVP.DeliveryMoment.DeliveryMomentCosmosRepository
 
                 //Get Database and Collection  
                 Console.WriteLine("Get Database : deliverymoment-db :");
-               
                 IMongoDatabase db = dbClient.GetDatabase("deliverymoment-db");
 
                 Console.WriteLine("Get Deilverymoment Collection :");
 
-                var deliveryColl = db.GetCollection<BsonDocument>("delivery-moment​​");
+                var deliveryColl = db.GetCollection<BsonDocument>("delivery-moment​");
 
                 Console.WriteLine("Changestream code start");
 
