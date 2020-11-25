@@ -13,7 +13,7 @@ namespace TCS.MVP.DeliveryMoment.ConfluentKafkaUtility
             try
             {
                 string brokerList = "pkc-lq8gm.westeurope.azure.confluent.cloud:9092";
-                string topicName = "DeliveryMomentProcessor";
+                string topicName = "DeliveryMomentChangeStream";
                 var config = new ProducerConfig { BootstrapServers = brokerList };
                 config.SecurityProtocol = SecurityProtocol.SaslSsl;
                 config.SaslMechanism = SaslMechanism.Plain;
