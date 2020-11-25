@@ -29,8 +29,8 @@ namespace TCS.MVP.DeliveryMoment.DeliveryMomentCosmosRepository
 
                 Console.WriteLine("Get Deilverymoment Collection :");
 
-                //var deliveryColl = db.GetCollection<BsonDocument>("delivery-moment​");
-                var deliveryColl = db.GetCollection<BsonDocument>("deliveryMoment​​");
+                var deliveryColl = db.GetCollection<BsonDocument>("delivery-moment​");
+                //var deliveryColl = db.GetCollection<BsonDocument>("deliveryMoment​");
 
                 Console.WriteLine("Changestream code start");
 
